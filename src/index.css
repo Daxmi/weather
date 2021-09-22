@@ -3,11 +3,11 @@
   margin: 0;
   font-family: Playfair Display;
 }
-.App {
+.app {
   background-size: cover;
   background-color: black;
 }
-.App-header {
+.app-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;

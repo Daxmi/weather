@@ -19,7 +19,7 @@ export default function Detail(props) {
         searchLocation={searchLocation}
         location={location}
       /> 
-      {weatherData !== "" ? (
+      {weatherData !== "" && (
         <div>
           <div className="heading">
             <h1>
@@ -34,9 +34,7 @@ export default function Detail(props) {
             ))}
           </>
         </div>
-      ) : (
-        "Searching ..."
-      )}
+      ) }
       <div className="date">{new Date().toDateString().slice(0, 10)}</div>
     </div>
   );
