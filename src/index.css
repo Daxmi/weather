@@ -3,10 +3,12 @@
   margin: 0;
   font-family: Playfair Display;
 }
+
 .app {
   background-size: cover;
   background-color: black;
 }
+
 .app-header {
   min-height: 100vh;
   display: flex;
@@ -14,7 +16,9 @@
   align-items: center;
   justify-content: center;
   color: white;
+  background-size: cover;
 }
+
 .date {
   color: white;
   font-size: 20px;
@@ -22,12 +26,13 @@
   bottom: 10px;
   right: 10px;
 }
+
 .weather-container {
   position: relative;
   border: 1px solid #cecaca;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
-  box-shadow: 0 8px 32px 0 rgba(231, 160, 5, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(34, 26, 10, 0.37);
   backdrop-filter: blur(30px);
   padding: 30px;
   width: 80%;
@@ -35,15 +40,19 @@
   margin: auto;
   box-sizing: border-box;
 }
+
 .search {
   width: 100%;
 }
+
 .heading {
   margin: 20px 0;
 }
+
 .heading h1 {
   font-size: 2em;
 }
+
 .weather-container input {
   width: 100%;
   height: 50px;
@@ -53,23 +62,26 @@
   box-sizing: border-box;
   outline: none;
   border: 0;
-  
   background: rgba(255, 255, 255, 0.3);
 }
+
 .weather-container input::placeholder {
   font-size: 20px;
   color: rgb(73, 72, 72);
 }
+
 .condition {
   display: flex;
   margin: 10px 0;
 }
+
 .temp {
   margin: 0 0 0 auto;
   display: flex;
   align-self: center;
   justify-content: center;
 }
+
 .temp img {
   width: 60px;
 }

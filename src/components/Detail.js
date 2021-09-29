@@ -26,12 +26,13 @@ export default function Detail(props) {
               <b>
                 {name}, {country}
               </b>
+            
             </h1>
           </div>
           <>
             {list.map((weatherday) => (
               <List weatherday={weatherday} weatherImage={weatherImage} key = {weatherday.dt_txt} />
-            ))}
+            ))}           
           </>
         </div>
       ) }
