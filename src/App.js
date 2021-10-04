@@ -17,7 +17,7 @@ function App() {
   const weatherImage = `https://openweathermap.org/img/wn/`;
 
   useEffect(() => {
-    const apiurl = `https://api.openweathermap.org/data/2.5/forecast?q=${search}&appid=${apiKey}&units=metric&cnt=5`;
+    const apiurl = `https://api.openweathermap.org/data/2.5/forecast?q=${search}&appid=${apiKey}&units=metric&cnt=40`;
     const getWeatherData = async () => {
       try {
         const response = await fetch(apiurl);
@@ -33,7 +33,6 @@ function App() {
         }
         setLoading(true);
         console.log(jsonData);
-        console.log(weatherData);
       } catch (error) {
         console.log(error.message);
       }

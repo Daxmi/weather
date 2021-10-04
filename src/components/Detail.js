@@ -10,10 +10,10 @@ export default function Detail(props) {
     weatherImage,
     location,
   } = props;
+  let result = [];
   const { country, name, list } = weatherData;
   return (
     <div className="weather-container">
-      
       <Form
         getWeatherDetails={getWeatherDetails}
         searchLocation={searchLocation}
@@ -29,14 +29,17 @@ export default function Detail(props) {
             
             </h1>
           </div>
+          { 
+          list.filter((list, index) => {index % 8 === 0 &&  
+              result.push(list); return "";
+          })}
           <>
-            {list.map((weatherday) => (
+            {result.map((weatherday) => (
               <List weatherday={weatherday} weatherImage={weatherImage} key = {weatherday.dt_txt} />
             ))}           
           </>
         </div>
       ) }
-      <div className="date">{new Date().toDateString().slice(0, 10)}</div>
     </div>
   );
 }
