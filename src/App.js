@@ -32,7 +32,6 @@ function App() {
           throw Error("City not found");
         }
         setLoading(true);
-        console.log(jsonData);
       } catch (error) {
         console.log(error.message);
       }
